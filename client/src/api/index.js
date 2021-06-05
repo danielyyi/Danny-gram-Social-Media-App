@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/posts';
+//if you want to deploy this yourself in your own broswer, id recommend changing this to = 'http://localhost:5000/posts' and running the program locally
+const url = 'https://danielsocialapp.herokuapp.com/posts';
 
 export const fetchPosts = () => axios.get(url); 
 export const createPost = (newPost) => axios.post(url, newPost);
